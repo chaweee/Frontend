@@ -1,11 +1,21 @@
-const Header = ({name}) => {
+import React from 'react'
+import myLogo from '../assets/lugo.png'
+
+const Header = () => {
     return (
-        <>
-        <section className="container mx-auto px-4 py-2 bg-blue-300 rounded-lg shadow-md">
-            <h1 className=" text-center text-9xl font-bold text-yellow-300">{name}</h1>
-        </section>
-        </>
-    );
+        <header className="app-header">
+            <div className="container">
+                <div className="header-content">
+                    {/* The Logo Image */}
+                    <img src={myLogo} alt="Logo" className="header-logo" />
+                    
+                    {/* The Title and Tagline */}
+                    <h1 className="app-title">Ma, anong ulam?</h1>
+                    <p className="app-tagline">Para sa araw-araw na tanong ng pamilya.</p>
+                </div>
+            </div>
+        </header>
+    )
 }
 
-export default Header;
+export default Header
