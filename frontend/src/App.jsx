@@ -312,7 +312,7 @@ function App() {
         <nav className="nav-tabs">
           <button className={`nav-btn ${view === 'search' ? 'active' : ''}`} onClick={() => setView('search')}>🔍 Hanap ka na dyan, Nak</button>
           <button className={`nav-btn ${view === 'pantry' ? 'active' : ''}`} onClick={() => setView('pantry')}>🥕 Ano bang meron?</button>
-          <button className={`nav-btn ${view === 'favorites' ? 'active' : ''}`} onClick={() => setView('favorites')}>❤️ Paborito ({favorites.length})</button>
+          <button className={`nav-btn ${view === 'favorites' ? 'active' : ''}`} onClick={() => setView('favorites')}>❤️ My Palagi ({favorites.length})</button>
         </nav>
 
         {/* VIEW 1: SEARCH */}
